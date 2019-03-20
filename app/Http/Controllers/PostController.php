@@ -126,7 +126,7 @@ class PostController extends Controller
         $post->save();
         //set flash data with success message
 
-        Session::flash('success', 'This post wass successfully saved.');
+        Session::flash('success', 'This post wass successfully updated.');
 
         // redirect with flash the data to posts.show
 

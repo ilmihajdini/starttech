@@ -11,9 +11,10 @@
 |
 */
 
-Route ::get('/article/{slug}', ['as' =>'article.single', 'uses' => 'ArticleController@getSingle'])->where('slug', '[\w\d\-\_]+  ');
+Route::get('article/{slug}', ['as' =>'article.single', 'uses' => 'ArticleController@getSingle'])
+->where('slug', '[\w\d\-\_]+');
 
-Route::get('blog', ['uses'=>'ArticleController@getIndex', 'as' => 'article.index']);
+Route::get('article', ['uses'=>'ArticleController@getIndex', 'as' => 'article.index']);
 
 Route::get('contact', 'PagesController@getContact'); 
 
