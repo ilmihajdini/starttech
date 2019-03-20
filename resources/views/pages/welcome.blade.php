@@ -23,7 +23,7 @@
                       <div class="post">
                         <h3>{{$post->title}} </h3>
                       <p>{{substr($post->body, 0, 350)}} {{ strlen($post->body)>300 ? "..." :"" }}</p>
-                      <a href="{{url('article/'.$post->slug)}}" class="btn btn-primary">Read More</a>
+                      <a href="{{url('article/'.$post->slug) }}" class="btn btn-primary">Read More</a>
                       </div>
                       <hr>
                     @endforeach
