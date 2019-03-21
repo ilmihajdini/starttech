@@ -1,6 +1,6 @@
 
    <!-- ************************ *****End of navbar ******************************************************** -->
-@extends('main')
+@extends('layouts.app')
 
 @section('title', '| Homepage')
 

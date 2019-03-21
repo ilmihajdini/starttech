@@ -1,4 +1,4 @@
-@extends('main')
+@extends('layouts.app')
 @section('title', '| About Us')
 @section('content')
     <div class="row col-md-12">
